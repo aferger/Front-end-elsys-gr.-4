@@ -1,5 +1,3 @@
-const net = require('net');
-
 function getJsonProperty (file, key) {
     return new Promise((resolve, reject) => {
         const socket = new net.Socket();

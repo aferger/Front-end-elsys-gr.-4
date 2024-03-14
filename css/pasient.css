@@ -21,13 +21,11 @@ h1 {
     text-align: right;
 }
 
-
-
 .btn-group button {
-    background-color: #54acec; /* Green background */
-    border: 1px solid #298ed6; /* Green border */
+    background-color: #54acec;
+    border: 1px solid #298ed6;
     color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
+    padding: 10px 24px; 
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
 }
@@ -43,12 +41,48 @@ h1 {
     display: table;
 }
   
-/* Add a background color on hover */
+
 .btn-group button:hover {
-    background-color: #298ed6;
+    background-color: #298ed6; /* Add a background color on hover */
 }
 
 #bredde {
-    width: 25%;
+    width: 14.2857143%;
 }
+
+.grid-item {
+    background-color: #54acec; 
+    /*padding: 20px; */
+    border: 1px;
+    text-align: center; 
+}
+
+.grid-item-two {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 30px;
+    border: 0px solid #ccc;
+    border-top: none;
+}
+
+.tablinks{
+    width: 100%;
+    height: auto;
+}
+
+.vann {
+    width: 50%;
+    height: max-content;
+}
+
+.stat {
+    width: 50%;
+    height: max-content;
+}
+
   

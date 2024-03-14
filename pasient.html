@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/pasient.css"/>
-    <script type="text/javascript" src="js/pasient.js"></script>
+    <script type="text/javascript" src="js/behandler.js"></script>
 </head>
 
 <body>
@@ -21,9 +21,68 @@
     </div>
 
     <div class="btn-group" style="width:100%">
-        <button class="tablinks" id='bredde' onclick="openGraph(event, 'pasienten'); openGraph(event, 'pasient1'); openGraph(event, 'pasienteen') ">Pasient 1</button>
-        <button class="tablinks" id='bredde' onclick="openGraph(event, 'pasientto'); ">Pasient 2</button>
-        <button class="tablinks" id="bredde" onclick="openGraph(event, 'pasienttre'); ">Pasient 3</button>
-        <button class="tablinks" id="bredde" onclick="openGraph(event, 'pasientfire'); ">Pasient 4</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann1'); openGraph(event, 'vann1'); openGraph(event, 'stat1')">Pasient 1</button>
+        <button class="tablinks" id='bredde' onclick="deleted(event, 'vann2'); openGraph(event, 'vann2'); openGraph(event, 'stat2')">Pasient 2</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann3'); openGraph(event, 'vann3'); openGraph(event, 'stat3')">Pasient 3</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann4'); openGraph(event, 'vann4'); openGraph(event, 'stat4')">Pasient 4</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann5'); openGraph(event, 'vann5'); openGraph(event, 'stat5')">Pasient 5</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann6'); openGraph(event, 'vann6'); openGraph(event, 'stat6')">Pasient 6</button>
+        <button class="tablinks" id="bredde" onclick="deleted(event, 'vann7'); openGraph(event, 'vann7'); openGraph(event, 'stat7')">Pasient 7</button>
+        
     </div>
+
+    <div class="grid-item" style="background-color: darkblue;">
+        <div class="grid-item-two"> 
+            <div class="vann" style="background-color: red;">
+                <div id="vann1" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 1</h3>
+                </div>
+                <div id="vann2" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 2</h3>
+                </div>
+                <div id="vann3" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 3</h3>
+                </div>
+                <div id="vann4" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 4</h3>
+                </div>
+                <div id="vann5" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 5</h3>
+                </div>
+                <div id="vann6" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 6</h3>
+                </div>
+                <div id="vann7" class="tabcontent" class="grid-item">
+                    <h3>Vannglass pasient 7</h3>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item-two"> 
+            <div class="stat" style="background-color: yellow;">
+                <div id="stat1" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 1</h3>
+                </div>
+                <div id="stat2" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 2</h3>
+                </div>
+                <div id="stat3" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 3</h3>
+                </div>
+                <div id="stat4" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 4</h3>
+                </div>
+                <div id="stat5" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 5</h3>
+                </div>
+                <div id="stat6" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 6</h3>
+                </div>
+                <div id="stat7" class="tabcontent" class="grid-item">
+                    <h3>Statistikk pasient 7</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="behandler.css"/>
+    <script type="text/javascript" src="behandler.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div style="display: flex; flex-wrap: wrap;">
+            <div id="bildevenstre" style="flex: 0 0 50%;">
+            <a href="forside.html" target="_self"><img src="logotre.jpg" alt="image" height="110px" width="(110*3.58)px"></a>
+            </div>
+            
+            <div id= "bildehøyre" style="flex: 0 0 50%;">
+            <img src="tannhjulblaa.jpg" alt="image" height="90px" width="90px">
+            </div> 
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="btn-group" class="tabcontent" class="grid-item">
+                <button class="tablinks" onclick="deleted(event, 'graf1'); openGraph(event, 'graf1'); openGraph(event, 'siste_resultat1'); openGraph(event, 'gjennomsnitt1'); openGraph(event, 'hoyeste-score1') ; openGraph(event, 'nest_siste1')">Pasient 1</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf2'); openGraph(event, 'graf2'); openGraph(event, 'siste_resultat2'); openGraph(event, 'gjennomsnitt2'); openGraph(event, 'hoyeste-score2'); openGraph(event, 'nest_siste2')">Pasient 2</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf3'); openGraph(event, 'graf3'); openGraph(event, 'siste_resultat3'); openGraph(event, 'gjennomsnitt3'); openGraph(event, 'hoyeste-score3') ; openGraph(event, 'nest_siste3')">Pasient 3</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf4'); openGraph(event, 'graf4'); openGraph(event, 'siste_resultat4'); openGraph(event, 'gjennomsnitt4'); openGraph(event, 'hoyeste-score4') ; openGraph(event, 'nest_siste4')">Pasient 4</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf5'); openGraph(event, 'graf5'); openGraph(event, 'siste_resultat5'); openGraph(event, 'gjennomsnitt5'); openGraph(event, 'hoyeste-score5') ; openGraph(event, 'nest_siste5')">Pasient 5</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf6'); openGraph(event, 'graf6'); openGraph(event, 'siste_resultat6'); openGraph(event, 'gjennomsnitt6'); openGraph(event, 'hoyeste-score6') ; openGraph(event, 'nest_siste6')">Pasient 6</button>
+
+                <button class="tablinks" onclick="deleted(event, 'graf7'); openGraph(event, 'graf7'); openGraph(event, 'siste_resultat7'); openGraph(event, 'gjennomsnitt7'); openGraph(event, 'hoyeste-score7') ; openGraph(event, 'nest_siste7')">Pasient 7</button>
+            </div>
+        </div>
+        <div class="grid-item" style="background-color: darkblue;">
+            <div class="grid-item-two"> 
+                <div class="graf" style="background-color: red;">
+                    <div id="graf1" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 1</h3>
+                    </div>
+                    <div id="graf2" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 2</h3>
+                    </div>
+                    <div id="graf3" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 3</h3>
+                    </div>
+                    <div id="graf4" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 4</h3>
+                    </div>
+                    <div id="graf5" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 5</h3>
+                    </div>
+                    <div id="graf6" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 6</h3>
+                    </div>
+                    <div id="graf7" class="tabcontent" class="grid-item">
+                        <h3>Grafen til pasient 7</h3>
+                    </div>
+                </div>
+                <div class="siste_resultat" style="background-color: orange;">
+                    <div id="siste_resultat1" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 1</h3>
+                    </div>
+                    <div id="siste_resultat2" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 2</h3>
+                    </div>
+                    <div id="siste_resultat3" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 3</h3>
+                    </div>
+                    <div id="siste_resultat4" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 4</h3>
+                    </div>
+                    <div id="siste_resultat5" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 5</h3>
+                    </div>
+                    <div id="siste_resultat6" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 6</h3>
+                    </div>
+                    <div id="siste_resultat7" class="tabcontent" class="grid-item">
+                        <h3>Siste resultatet til pasient 7</h3>
+                    </div>
+                </div>
+                <div class="grid-item-three" class="gjennomsnitt" style="background-color: yellow">
+                    <div id="gjennomsnitt1" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 1</h3>
+                    </div>
+                    <div id="gjennomsnitt2" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 2</h3>
+                    </div>
+                    <div id="gjennomsnitt3" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 3</h3>
+                    </div>
+                    <div id="gjennomsnitt4" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 4</h3>
+                    </div>
+                    <div id="gjennomsnitt5" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 5</h3>
+                    </div>
+                    <div id="gjennomsnitt6" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 6</h3>
+                    </div>
+                    <div id="gjennomsnitt7" class="tabcontent" class="grid-item" style="background-color: orangered;">
+                        <h3>Her vises gjennomsnittet til pasient 7</h3>
+                    </div>
+
+                    <div id="hoyeste-score1" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 1</h3>
+                    </div> 
+                    <div id="hoyeste-score2" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 2</h3>
+                    </div> 
+                    <div id="hoyeste-score3" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 3</h3>
+                    </div> 
+                    <div id="hoyeste-score4" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 4</h3>
+                    </div> 
+                    <div id="hoyeste-score5" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 5</h3>
+                    </div> 
+                    <div id="hoyeste-score6" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score6</h3>
+                    </div> 
+                    <div id="hoyeste-score7" class="tabcontent" class="grid-item" style="background-color: olivedrab;">
+                        <h3>Her vises høyeste score 7</h3>
+                    </div>  
+                </div> 
+                <div class="nest_siste_resultat" style="background-color: yellowgreen;">
+                    <div id="nest_siste1" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 1</h3>
+                    </div>
+                    <div id="nest_siste2" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 2</h3>
+                    </div>
+                    <div id="nest_siste3" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 3</h3>
+                    </div>
+                    <div id="nest_siste4" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 4</h3>
+                    </div>
+                    <div id="nest_siste5" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 5</h3>
+                    </div>
+                    <div id="nest_siste6" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 6</h3>
+                    </div>
+                    <div id="nest_siste7" class="tabcontent" class="grid-item">
+                        <h3>Nest siste resultat av pasient 7</h3>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>

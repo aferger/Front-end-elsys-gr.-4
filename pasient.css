@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    font-size: large; 
+    background-color: #54acec;
+}
+h1 {
+    color: navy;
+    margin-left: 30px;
+}
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #54acec;
+    color: navy;
+    font-size: 20px;
+}
+#bildevenstre {
+    text-align: left;
+}
+#bildehøyre {
+    text-align: right;
+}
+
+
+
+.btn-group button {
+    background-color: #54acec; /* Green background */
+    border: 1px solid #298ed6; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+  
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+  
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #298ed6;
+}
+
+#bredde {
+    width: 25%;
+}
+  

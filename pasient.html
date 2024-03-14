@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pasient.css"/>
+    <script type="text/javascript" src="pasient.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div style="display: flex; flex-wrap: wrap;">
+            <div id="bildevenstre" style="flex: 0 0 50%;">
+            <a href="forside.html" target="_self"><img src="logotre.jpg" alt="image" height="110px" width="(110*3.58)px"></a>
+            </div>
+            
+            <div id= "bildehøyre" style="flex: 0 0 50%;">
+            <img src="tannhjulblaa.jpg" alt="image" height="90px" width="90px">
+            </div> 
+        </div>
+    </div>
+
+    <div class="btn-group" style="width:100%">
+        <button class="tablinks" id='bredde' onclick="openGraph(event, 'pasienten'); openGraph(event, 'pasient1'); openGraph(event, 'pasienteen') ">Pasient 1</button>
+        <button class="tablinks" id='bredde' onclick="openGraph(event, 'pasientto'); ">Pasient 2</button>
+        <button class="tablinks" id="bredde" onclick="openGraph(event, 'pasienttre'); ">Pasient 3</button>
+        <button class="tablinks" id="bredde" onclick="openGraph(event, 'pasientfire'); ">Pasient 4</button>
+    </div>
+</body>
